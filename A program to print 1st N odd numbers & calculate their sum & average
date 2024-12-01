@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int i,n,odd=1,sum=0;
+    float avg;
+    printf("Enter value of n:\n");
+    scanf("%d",&n);
+    for (i = 0; i < n; i++)
+    {
+    printf("%d\n",odd);
+    sum=sum+odd;
+    odd=odd+2;
+    }
+    printf("Sum is : %d\n",sum);
+    avg=sum/n;
+    printf("Average is : %f\n",avg);
+return 0;
+}
