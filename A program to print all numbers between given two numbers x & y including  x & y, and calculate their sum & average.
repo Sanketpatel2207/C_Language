@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main(){
+    int x,y,i,sum=0;
+    float avg,n;
+    printf("Enter x and y respectively: ");
+    scanf("%d%d",&x,&y);
+    n=((y-x)+1);
+    printf("Numbers between %d and %d are : \n",x,y);
+    for (i=x; i<=y; i++)
+    {
+        printf("%d\n",i);
+        sum=sum+i;
+    }
+    printf("Sum of numbers : %d\n",sum);
+    avg=sum/n;
+    printf("Average of numbers : %f",avg);
+    return 0;
+}
